@@ -1,4 +1,4 @@
-package behavioral.factory;
+package creational.factory;
 
 /**
  * ITransport is the contract for all types of transport (truck, ship, plane,
