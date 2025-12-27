@@ -1,7 +1,10 @@
 package behavioral.factory;
 
-import java.util.Arrays;
-
+/**
+ * TruckTransport is the land option. It follows ITransport, but does things the
+ * truck way (medium weight, medium cost, some carbon penalty).
+ *
+ */
 public class TruckTransport implements ITransport {
     public Double getBasePrice() {
         return 50.0;

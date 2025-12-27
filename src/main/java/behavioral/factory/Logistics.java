@@ -1,6 +1,21 @@
 package behavioral.factory;
 
-
+/**
+ * Logistics is the base class for planning deliveries. The whole point here is
+ * to use the Factory Method pattern:
+ *
+ * Instead of hardcoding which transport to use (truck, ship, plane), we let
+ * subclasses decide. This keeps the code flexible and open for new types of
+ * transport later.
+ *
+ * Why? Because each transport does shipping in its own way, with its own rules
+ * and costs. By using this pattern, we keep the creation logic out of the main
+ * flow and make it easy to add or change transport types without breaking
+ * everything else.
+ *
+ * We add comments at the class level (not every function) to explain the big
+ * picture and the reason for this design.
+ */
 public abstract class Logistics {
 
     protected abstract ITransport createTransport();
@@ -26,6 +41,5 @@ public abstract class Logistics {
             case TransportModes.SHIP -> new ShipTransport();
         };
     }
-
 
 }

@@ -1,9 +1,7 @@
 package behavioral.factory;
 
-
 public record ShippingData(
-        String name,
-        Double weight,
-        Integer quantity
-) {
+                String name,
+                Double weight,
+                Integer quantity) {
 }
