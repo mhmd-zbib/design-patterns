@@ -1,4 +1,4 @@
-package behavioral.factory;
+package creational.factory;
 
 /**
  * Logistics is the base class for planning deliveries. The whole point here is
@@ -12,9 +12,6 @@ package behavioral.factory;
  * and costs. By using this pattern, we keep the creation logic out of the main
  * flow and make it easy to add or change transport types without breaking
  * everything else.
- *
- * We add comments at the class level (not every function) to explain the big
- * picture and the reason for this design.
  */
 public abstract class Logistics {
 
