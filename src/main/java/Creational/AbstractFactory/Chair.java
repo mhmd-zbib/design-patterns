@@ -1,4 +1,4 @@
-package creational.abstractfactory;
+package Creational.AbstractFactiry;
 
 /**
  * Chair is the contract for all types of chairs (modern, victorian, etc).
